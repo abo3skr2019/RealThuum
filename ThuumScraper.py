@@ -52,7 +52,7 @@ def download_audio_files(url, directory):
 
 
 # Example usage
-url = "Source For Shouts"  # Replace with the URL you want to scrape
+url = os.getenv("ScraperURL")  # Replace with the URL you want to scrape
 directory = (
     "TrainingData"  # Replace with the directory path where you want to save the files
 )
