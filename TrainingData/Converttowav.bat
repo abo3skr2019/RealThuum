@@ -14,6 +14,8 @@ for %%A in (*) do (
         REM Check if the conversion was successful
         if exist "!output!" (
             echo Converted "%%A" to "!output!"
+            REM Delete the original file
+            del "%%A"
         ) else (
             echo Failed to convert "%%A" to "!output!"
         )
